@@ -77,7 +77,7 @@ var callLady = {
   sliderProducts: function(a) {
     setTimeout(function() {
       $(a).slick({
-        dots: false,
+        dots: true,
         infinite: !0,
         speed: 800,
         arrows: true,
@@ -2779,7 +2779,7 @@ init: function(){
     callLady.showLogin();
     callLady.customBuyShelf();
     callLady.enviarNewsletter();
-    if (body.hasClass('lady-home')) {
+    if (body.hasClass('new-home')) {
       callLady.sliderBanners(".banner-principal > div");
       callLady.sliderProducts(".prateleira01 .shelf > ul, .prateleira02 .shelf > ul, .prateleira03 .shelf > ul");
       callLady.sliderCategoriasBar(".escolha-tamanho > ul");

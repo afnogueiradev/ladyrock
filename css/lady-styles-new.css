@@ -826,7 +826,7 @@ header .logo path {
     font-size: 18px;
     display: inline-block;
 }
-.banner-principal .slick-dots {
+.slick-dots {
     text-align: center;
     /* position: absolute; */
     /* right: 32px; */
@@ -835,15 +835,15 @@ header .logo path {
     float: left;
     margin: 14px 0px 0px 0px;
 }
-.banner-principal .slick-dots li {
+.slick-dots li {
     float: none;
     display: inline-block;
     margin: 0px;
 }
-.banner-principal .slick-dots li:last-of-type::after {
+.slick-dots li:last-of-type::after {
     display: none;
 }
-.banner-principal .slick-dots li button {
+.slick-dots li button {
     display: inline-block;
     /* width: 34px; */
     height: 20px;
@@ -857,7 +857,7 @@ header .logo path {
     vertical-align: baseline;
     line-height: 100%;
 }
-.banner-principal .slick-dots li button::before {
+.slick-dots li button::before {
     content: "\e946";
     color: #000;
     font-family: "lady-icon";
@@ -869,7 +869,7 @@ header .logo path {
     opacity: 0.4;
     font-weight: bold;
 }
-.banner-principal .slick-dots li.slick-active button::before {
+.slick-dots li.slick-active button::before {
     opacity: 1;
 }
 
@@ -3626,6 +3626,7 @@ footer .redes-sociais {
 .banners-central {
     float: left;
     width: 100%;
+    margin-top: 60px;
 }
 
 .banners-rodape {
@@ -4124,14 +4125,10 @@ section.mosaico {
 }
 
 .shelf li {
-    float: left;
     margin: 0px 15px 35px 0px;
     text-align: center;
-    padding: 0px;
-    width: calc(33% - 15px);
     font-family: "Work Sans";
     padding: 0px;
-    border: 1px solid #000;
     border-radius: 0px;
     position: relative;
     overflow: initial;
@@ -4140,7 +4137,6 @@ section.mosaico {
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    height: 636px;
 }
 
 .shelf.grid4 li {
@@ -8955,9 +8951,8 @@ ul.menuLat li a:hover {
  
 .banners-detaque .box-banner {
     float: left;
-    width: calc(50% - 10px);
-    margin: 0px 10px 0px 0px;
-    background: #000;
+    width: calc(25% - 0px);
+    margin: 0px 50px;
 }
 
 .banners-mosaico .box-banner {
