@@ -1,2 +1,2 @@
-# Aplicando novo layout na loja de roupas
+# Aplicando novo layout na loja
 <br>
