@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt-br" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:contentPlaceHolder id="seo" />
+    <vtex:metaTags/>
+    <vtex:template id="lady-commonStyles" />
+    <meta name="google-site-verification" content="jm4sHaL4eX6M9TOzBPzyWTW5zO6HRvfjv-QjXhrsbZM" />
+    <meta name="facebook-domain-verification" content="7afb3684dtsww1u79j9f7zq9rf5apf" />
+</head>
+
+<body>
+
+    <vtex:template id="00-lady-header" />
+
+    <main class="container-site">
+    
+        <div class="banner-principal">
+            <div class="desk">
+                <vtex:contentPlaceHolder id="BannerDesktop" />
+            </div>
+            <div class="mob">
+                <vtex:contentPlaceHolder id="BannerMobile" />
+            </div>
+        </div>
+
+        <div class="container-center">
+            <!-- prateleira as mais vendidas -->
+            <section class="prateleira01 prateleira">
+                <vtex:contentPlaceHolder id="Prateleira 01" />
+            </section>
+
+            <!-- banners seu estilo -->
+            <section class="banners-detaque">
+                <h1>O que faz seu estilo?</h1>
+                <div class="box-itens">
+                    <vtex:contentPlaceHolder id="Banners Destaque" />
+                </div>
+            </section>
+        </div>    
+        <!-- banner Inverno -->
+        <section class="banners-central">
+            <vtex:contentPlaceHolder id="Banner Central" />
+        </section>
+        <div class="container-center">
+            <!-- prateleira abas -->
+            <section class="prateleira02 prateleira">
+                <h1>Especiais para você #euamojeans</h1>
+                <vtex:contentPlaceHolder id="Prateleira 02" />
+                <vtex.cmc:newsletterCustomN />
+            </section>
+        </div>
+        <!-- banner Aviso -->
+        <section class="banners-central">
+            <vtex:contentPlaceHolder id="Banner Aviso" />
+        </section>
+        <div class="container-center">
+            <!-- prateleira ultima -->
+            <section class="prateleira03 prateleira">
+                <vtex:contentPlaceHolder id="Prateleira 03" />
+            </section>
+            
+        </div>
+        
+    </main>
+
+    <vtex:template id="00-lady-footer" />
+    <vtex:template id="lady-commonScripts" />
+    
+</body>
+
+</html>
