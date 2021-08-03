@@ -1,2 +1,2 @@
-# Aplicando novo layout na loja #
+# Aplicando novo layout na loja 
 <br>
