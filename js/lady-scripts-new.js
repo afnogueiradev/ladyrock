@@ -102,8 +102,8 @@ var callLady = {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             dots: true,
           }
         },
@@ -943,7 +943,7 @@ var callLady = {
     },
     enviarNewsletter: function() {
       $(".enviarNewsLateral").attr("href", "javascript:void(0);");
-      $(".enviarNewsLateral").click(function(){
+      $(".enviarNewsLateral").live('click',function(){
         var varN = $(".puNome").val();
         var varE = $(".puEmail").val();
         var varNP = $(".puNome");
@@ -2785,7 +2785,7 @@ init: function(){
       callLady.sliderCategoriasBar(".escolha-tamanho > ul");
       callLady.sliderTamanhos(".catalogo-digital > .container-center");
       callLady.customProduct();
-      callLady.instaFeed();
+      //callLady.instaFeed();
     }
     if (body.hasClass('lady-category')) {
      callLady.customElements();
