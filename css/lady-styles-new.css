@@ -4017,10 +4017,10 @@ section.mosaico {
     width: 33.3%;
 }
 
-.lady-category .shelf li{width: 240px;}
+.lady-category .shelf li{}
 
 .shelf li {
-    margin: 35px 90px 0px 0px;
+    margin: 50px 90px 0px 0px;
     text-align: center;
     font-family: "Work Sans";
     /* box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25); */
@@ -4901,6 +4901,7 @@ section.mosaico {
     float: left;
     width: 100%;
     text-align: left;
+    margin-top: 43px;
     /* margin: 20px 0px; */
 }
 
@@ -4917,7 +4918,7 @@ section.mosaico {
 }
 
 .lady-category #produtos .product-list {
-    margin: 0px 0px 0px 50px;
+    margin: 48px 0px 0px 50px;
     position: relative;
 }
 
@@ -5159,6 +5160,7 @@ ul.pages li.pgEmpty {
 .viewGrid3.active span,
 .viewGrid4.active span  {
     background-color: #000;
+    /* display: none; */
 }
 
 .viewGrid3::after {
@@ -5344,7 +5346,7 @@ ul.pages li.pgEmpty {
     font-size: 16px;
     color: #000;
     position: absolute;
-    right: 14px;
+    right: 4px;
     margin-top: 4px;
 }
 
@@ -5405,7 +5407,7 @@ ul.pages li.pgEmpty {
 }
 
 .pager.top ul.pages {
-    margin: 53px 0px 20px 0px;
+    margin: 53px 0px 0px 0px;
     width: 100%;
     text-align: center;
 }
@@ -5458,6 +5460,7 @@ ul.pages li.pgEmpty {
 .search-single-navigator {
 	float: left;
 	width: 100%;
+	margin-top: 48px;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -moz-flex;
@@ -9738,6 +9741,7 @@ ul.menuLat li a:hover {
     .fx-header {
         height: 150px;
     }
+    
     .fx-header .center {
         position: absolute;
         top: 0px;
@@ -12241,7 +12245,7 @@ top: 0;
     .lady-category #produtos .product-list {
         float: left;
         width: 100%;
-        margin: 27px 0px 0px 0px;
+        margin: 19px 0px 0px 0px;
     }
     .lady-busca-vazia .busca-vazia-main h1 {
         font-size: 20px;
@@ -12341,6 +12345,7 @@ top: 0;
         font-size: 32px;
         text-align: center;
     }
+    .optionList{width: 100%;}
     ul.pages li.previous {
         margin-right: 17px;
         font-size: 0px;
@@ -12359,14 +12364,16 @@ top: 0;
         padding: 20px 0px;
     }
     .shelf .productName {
-        min-height: 60px;
-        padding: 0px;
+        width: 100%;
+        overflow: visible;
+        margin: 12px 0px 0px 0px;
     }
     .shelf .buyButton {
         display: none;
     }
     .shelf .productInfos {
         padding: 0px;
+        width: 100%;
     }
     .yv-review-quickreview .fa {
         font-size: 19px!important;
@@ -12390,13 +12397,18 @@ top: 0;
     .bread-crumb ul {
         white-space: nowrap;
         width: auto;
+        margin: 0;
     }
     .shelf .productName a {
-        /* font-size: 12px; */
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+        padding: 0px 330px;
+        /* width: 340px; */
     }
     .shelf li {
         width: 100%;
-        margin: 0px 0px 15px 0px;
+        margin: 0px 0px 0px 0px;
         padding: 10px;
     }
     .vtex-account__page {
@@ -12427,8 +12439,8 @@ top: 0;
         padding: 0px;
         margin: 40px 0px 0px 0px;
     }
-    .shelf.grid4 li {
-        width: 50%;
+    .lady-category .shelf.grid4 li {
+        width: 42%;
     }
     .product-details {
         margin: 0px;
@@ -12645,62 +12657,75 @@ top: 0;
         border: none;
     }
     .product-list .main {
-        margin: 20px 0px 0px 0px;
-        float: left;
+        /* margin: 20px 0px 0px 0px; */
+        /* float: left; */
         width: 100%;
     }
     .boxFiltroOrder > h3 {
-        width: 100%;
-        float: left;
         position: absolute;
-        top: 48px;
-        width: 100%;
+        width: 152px;
         background: #fff;
-        height: 50px;
-        border: 1px solid #eeeeee;
-        margin: 0px;
+        margin-left: 28px;
+        height: 31px;
+        border: 1px solid #d1d1d1;
+        margin-top: 19px;
         color: #000;
-        text-align: left;
-        font-size: 15px;
-        font-weight: 500;
-        padding: 15px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 0px 5px 10px;
     }
     .btMenuFiltros {
-        float: left;
         position: absolute;
-        top: 103px;
-        left: 0px;
-        width: calc(47% - 5px);
-        background: #fff;
-        height: 50px;
-        border: 1px solid #eeeeee;
-        margin: 0px;
+        text-transform: uppercase;
+        width: 152px;
+        height: 31px;
+        border: 1px solid #d1d1d1;
+        margin: 66px 0px 0px 293px;
         color: #000;
-        text-align: left;
-        font-size: 15px;
-        font-weight: 500;
-        padding: 15px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 85px 6px 10px;
     }
     .btMenuFiltros::after {
-        content: "";
+        content: ">";
+        transform: rotate(90deg);
         display: inline-block;
         vertical-align: middle;
-        margin-right: 10px;
-        width: 0;
-        height: 0;
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid #000;
         position: absolute;
-        top: 21px;
-        right: 5px;
+        right: 8px;
+        font-size: 16px;
     }
     .viewGrid{
-        margin-top: 50px;
+        margin-top: 75px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .viewGrid3 span:nth-of-type(2),
+    .viewGrid3 span:nth-of-type(3) {
+        display: none;
+    }
+    .viewGrid4 span:nth-of-type(3),
+    .viewGrid4 span:nth-of-type(4) {
+        display: none;
     }
     .pager{
-        margin-top: 50px;
+        margin-top: 34px;
+    }
+    .pr.shelf.n15colunas{
+        width: 100%;
+    }
+    .pr.shelf.n15colunas ul{margin:0;}
+    .lady-category .shelf li{width: 100%;margin-top: 50px;}
+    .shelf li .productImage{
+        width: 100%;
+        height: 546px;
+        padding: 10px;
+        /* float: left; */
+    }
+    .shelf li .productImage img{
+        height: 546px;
+        max-height: max-content;
     }
     .lady-produto .imagePlace .slick-dots > .slick-arrow.slick-prev,
     .lady-produto .imagePlace .slick-dots > .slick-arrow.slick-next {
