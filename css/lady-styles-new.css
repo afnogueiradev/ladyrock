@@ -12341,6 +12341,7 @@ top: 0;
         font-size: 32px;
         text-align: center;
     }
+    .optionList{width: 100%;}
     ul.pages li.previous {
         margin-right: 17px;
         font-size: 0px;
