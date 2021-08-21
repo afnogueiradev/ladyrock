@@ -5063,6 +5063,7 @@ ul.pages li.previous::before {
     border-radius: 30px;
     background: #fff;
     margin: 0px 0px 0px 13px;
+    font-weight: 500;
 }
 
 ul.pages li.previous::after {
@@ -5090,6 +5091,7 @@ ul.pages li.next::after {
     font-size: 20px;
     display: inline-block;
     width: 15px;
+    font-weight: 500;
     height: 18px;
     border-radius: 30px;
     background: #fff;
@@ -11789,11 +11791,15 @@ section.page-not-found {
     .shelf .bestPrice .bestPrice span,
     .shelf .bestPriceOff span.bestPrice,
     .shelf .bestPriceOff > span > span {
-        font-size: 18px;
+        font-size: 15px;
         float: none;
+        font-weight: 300;
     }
     .shelf .productinstallment {
-        margin: 0px 0px 0px 0px;    
+        margin: 0px 0px 0px 0px;
+        height: 20px;
+        font-size: 15px;
+        font-weight: 300;
     }
     .shelf .slick-slider .slick-arrow.slick-next {
         right: -15px;
@@ -12239,8 +12245,7 @@ section.page-not-found {
         padding: 0px 15px;
     }
     .container-center.fx-search {
-        
-top: 0;
+        top: 0;
     }
     .lady-category #produtos .product-list {
         float: left;
@@ -12344,6 +12349,7 @@ top: 0;
         width: 100%;
         font-size: 32px;
         text-align: center;
+        line-height: 38px;
     }
     .optionList{width: 100%;}
     ul.pages li.previous {
@@ -12363,10 +12369,17 @@ top: 0;
         white-space: nowrap;
         padding: 20px 0px;
     }
+    .pr.shelf.n15colunas h3{padding: 0 350px;}
+    .pr.shelf.n15colunas.grid4 h3{
+        padding:0 100px;
+    }
     .shelf .productName {
         width: 100%;
-        overflow: visible;
+        /* padding: 0 100px; */
+        text-align: center;
+        overflow: hidden;
         margin: 12px 0px 0px 0px;
+        float: unset;
     }
     .shelf .buyButton {
         display: none;
@@ -12374,7 +12387,12 @@ top: 0;
     .shelf .productInfos {
         padding: 0px;
         width: 100%;
+        margin-top: 12px;
+        height: 59px;
     }
+    .shelf .productInfos > a{margin:0;}
+    .shelf .bestPrice .oldPrice{display:none;}
+    .shelf .bestPrice{height:20px;}
     .yv-review-quickreview .fa {
         font-size: 19px!important;
     }
@@ -12384,6 +12402,7 @@ top: 0;
     .product-title h1 {
         font-size: 24px;
     }
+    .breadcrumb-wrapper{margin:0;}
     .bread-crumb {
         overflow-x: scroll!important;
         -webkit-overflow-scrolling: touch;
@@ -12403,12 +12422,11 @@ top: 0;
         font-size: 15px;
         text-align: center;
         font-weight: 600;
-        padding: 0px 330px;
-        /* width: 340px; */
+        float: unset;
     }
     .shelf li {
         width: 100%;
-        margin: 0px 0px 0px 0px;
+        margin: 65px 0px 0px 0px;
         padding: 10px;
     }
     .vtex-account__page {
@@ -12440,7 +12458,9 @@ top: 0;
         margin: 40px 0px 0px 0px;
     }
     .lady-category .shelf.grid4 li {
-        width: 42%;
+        width: 50%;
+        margin-right: 0;
+        margin-top: 65px;
     }
     .product-details {
         margin: 0px;
@@ -12648,13 +12668,11 @@ top: 0;
         padding: 20px;
     }
     .boxFiltroOrder {
-        position: absolute;
-        top: 28px;
-        right: 0px;
-        width: calc(53% - 5px);
-        /* background: red; */
-        /* float: left; */
-        border: none;
+    position: absolute;
+    top: 28px;
+    right: 0%;
+    width: calc(53% - 5px);
+    border: none;
     }
     .product-list .main {
         /* margin: 20px 0px 0px 0px; */
@@ -12662,29 +12680,37 @@ top: 0;
         width: 100%;
     }
     .boxFiltroOrder > h3 {
-        position: absolute;
-        width: 152px;
-        background: #fff;
-        margin-left: 28px;
-        height: 31px;
-        border: 1px solid #d1d1d1;
-        margin-top: 19px;
-        color: #000;
-        font-size: 14px;
-        font-weight: 400;
-        padding: 5px 0px 5px 10px;
+    float: left;
+    position: absolute;
+    top: 28px;
+    width: 152px;
+    left: 6%;
+    background: #fff;
+    height: 31px;
+    border: 1px solid #d1d1d1;
+    margin: 0px;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 5px;
     }
     .btMenuFiltros {
-        position: absolute;
-        text-transform: uppercase;
-        width: 152px;
-        height: 31px;
-        border: 1px solid #d1d1d1;
-        margin: 66px 0px 0px 293px;
-        color: #000;
-        font-size: 14px;
-        font-weight: 400;
-        padding: 5px 85px 6px 10px;
+    float: left;
+    position: absolute;
+    top: 75px;
+    left: 34%;
+    width: 152px;
+    background: #fff;
+    height: 31px;
+    border: 1px solid #d1d1d1;
+    margin: 0px;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 5px;
     }
     .btMenuFiltros::after {
         content: ">";
@@ -12696,11 +12722,17 @@ top: 0;
         font-size: 16px;
     }
     .viewGrid{
-        margin-top: 75px;
+        margin-top: 76px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
+    .viewGrid::before{
+        content:"Vizualização";
+        color: #8c8c8c;
+        font-size:12px;
+        padding: 4px 10px;
+        }
     .viewGrid3 span:nth-of-type(2),
     .viewGrid3 span:nth-of-type(3) {
         display: none;
@@ -12716,16 +12748,39 @@ top: 0;
         width: 100%;
     }
     .pr.shelf.n15colunas ul{margin:0;}
-    .lady-category .shelf li{width: 100%;margin-top: 50px;}
     .shelf li .productImage{
-        width: 100%;
+        width: 321px;
         height: 546px;
         padding: 10px;
-        /* float: left; */
+        float: unset;
+        margin: 0 auto;
+        display: flex;
     }
+    .flaghight{
+        position:absolute;
+        top: 0;
+        left: 0;
+        }
     .shelf li .productImage img{
         height: 546px;
         max-height: max-content;
+    }
+   .shelf .flaghight .flag.novo, .prod-selos .flag.novo {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    z-index: 9;
+    background-color: #6f7070;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 12px 0px 0px 0px;
+    border-radius: 40px;
+    font-weight: 500;
     }
     .lady-produto .imagePlace .slick-dots > .slick-arrow.slick-prev,
     .lady-produto .imagePlace .slick-dots > .slick-arrow.slick-next {
@@ -12825,8 +12880,68 @@ top: 0;
         padding: 6px 0px 0px 0px;
     }
 }
+@media only screen and (max-width: 480px) {
+    
+    .viewGrid{display:none;}
 
-@media only screen and (max-width: 767px) {
+    .btMenuFiltros{height:31px;padding: 5px;font-size: 14px;left: 15%;}
+
+    .boxFiltroOrder > h3{height:31px;font-size: 14px;float: unset;}
+
+    .pager.top ul.pages{margin-top: 46px;}
+
+    ul.pages li.previous::before{
+        content: "<";
+        font-size: 20px;
+        display: inline-block;
+        width: 15px;
+        height: 18px;
+        border-radius: 30px;
+        background: #fff;
+        margin: 0px 0px 0px 13px;
+        font-weight: 500;
+    }
+
+    ul.pages li.next::after{
+            content: ">"; 
+            font-size: 20px;     
+            display: inline-block;    
+            width: 15px;     
+            font-weight: 500;     
+            height: 18px;     
+            border-radius: 30px;     
+            background: #fff;
+    }
+
+    .lady-category .shelf.grid4 li{margin-top:51px;}
+
+    .shelf li{width: 50%;margin-top: 30px;height:370px;}
+
+    .shelf li .productImage{
+        width:175px;
+        height:271px;
+    }
+    .shelf .flaghight .flag.novo, .prod-selos .flag.novo{
+        /* margin-left: 20px; */
+    }
+    .shelf li .productImage img{height:271px;}
+    .pr.shelf.n15colunas.grid4 h3{
+        padding: 0 20px;
+        height: 58px;
+        }
+    .shelf .productInfos{
+        height:30px;
+        margin-top: 0;
+        }
+    .shelf .productInfos > a{height:30px;}
+
+    h3.productName{height:58px;}
+
+    .shelf .productName a{
+        font-size:13px;
+        font-weight:600;
+    }
+
     .fx-left li::after {
         display: none;
     }
@@ -12928,12 +13043,14 @@ top: 0;
         text-align: center;
     }
     .shelf .bestPrice .bestPrice {
-        height: 40px;
+        height: 15px;
     }
+    .pager.bottom .pages{margin-top:65px;overflow: unset;}
     .shelf .productName {
         min-height: inherit;
         height: 63px;
     }
+    .pr.shelf.n15colunas h3{padding:0 20px;}
     .shelf .data {
         padding-bottom: 0px;
     }
